@@ -1,0 +1,462 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.3.193/W32 for ARM                  31/Aug/2022  15:32:16
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Exe\Timer_PWM.out
+#    Map file     =  
+#        C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\List\Timer_PWM.map
+#    Command line =  
+#        -f C:\Users\SONART~1\AppData\Local\Temp\EWB7AE.tmp
+#        ("C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\main.o" "C:\Users\sonartech\Desktop\STM32
+#        nucleo\Timer - PWM\EWARM\Timer_PWM\Obj\startup_stm32l433xx.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_cortex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_dma.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_dma_ex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_exti.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_flash.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_flash_ex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_flash_ramfunc.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_gpio.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_i2c.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_i2c_ex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_msp.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_pwr.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_pwr_ex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_rcc.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_rcc_ex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_tim.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_tim_ex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_uart.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_hal_uart_ex.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\stm32l4xx_it.o"
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Obj\system_stm32l4xx.o" --no_out_extension -o
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\Exe\Timer_PWM.out" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM\Timer_PWM\List\Timer_PWM.map" --config
+#        "C:\Users\sonartech\Desktop\STM32 nucleo\Timer -
+#        PWM\EWARM/stm32l433xx_flash.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x803'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x18c
+  .intvec            ro code   0x800'0000   0x18c  startup_stm32l433xx.o [1]
+                             - 0x800'018c   0x18c
+
+"P1":                                      0x2264
+  .text              ro code   0x800'018c   0x78c  stm32l4xx_hal_rcc.o [1]
+  .text              ro code   0x800'0918    0x44  stm32l4xx_hal.o [1]
+  .text              ro code   0x800'095c     0xc  stm32l4xx_hal.o [1]
+  .text              ro code   0x800'0968    0x88  stm32l4xx_hal_pwr_ex.o [1]
+  .text              ro code   0x800'09f0    0xc8  stm32l4xx_hal_cortex.o [1]
+  .text              ro code   0x800'0ab8   0x6c4  stm32l4xx_hal_tim.o [1]
+  .text              ro code   0x800'117c   0x14c  stm32l4xx_hal_msp.o [1]
+  .text              ro code   0x800'12c8     0x2  stm32l4xx_hal_tim.o [1]
+  .text              ro code   0x800'12ca     0x2  stm32l4xx_hal_tim.o [1]
+  .text              ro code   0x800'12cc   0x282  main.o [1]
+  .text              ro code   0x800'154e     0x2  stm32l4xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'1550     0x2  stm32l4xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'1552     0x2  stm32l4xx_hal_tim.o [1]
+  .text              ro code   0x800'1554     0x2  stm32l4xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'1556     0x2  stm32l4xx_hal_tim.o [1]
+  .text              ro code   0x800'1558   0x1ea  stm32l4xx_hal_gpio.o [1]
+  .text              ro code   0x800'1742    0x3a  zero_init3.o [4]
+  .text              ro code   0x800'177c     0x6  ABImemclr4.o [4]
+  .text              ro code   0x800'1784   0x3b4  stm32l4xx_hal_rcc_ex.o [1]
+  .text              ro code   0x800'1b38    0x2c  stm32l4xx_hal.o [1]
+  .text              ro code   0x800'1b64   0x448  stm32l4xx_hal_uart.o [1]
+  .text              ro code   0x800'1fac    0x64  stm32l4xx_hal_tim_ex.o [1]
+  .text              ro code   0x800'2010    0x32  ABImemset48.o [4]
+  .text              ro code   0x800'2044   0x106  I64DivMod_small.o [4]
+  .text              ro code   0x800'214c     0x2  I64DivZer.o [4]
+  .rodata            const     0x800'2150    0x30  system_stm32l4xx.o [1]
+  .text              ro code   0x800'2180    0x2c  copy_init3.o [4]
+  .text              ro code   0x800'21ac    0x28  stm32l4xx_it.o [1]
+  .text              ro code   0x800'21d4    0x10  stm32l4xx_hal.o [1]
+  .text              ro code   0x800'21e4    0x28  data_init.o [4]
+  .text              ro code   0x800'220c    0x22  fpinit_M.o [3]
+  .iar.init_table    const     0x800'2230    0x24  - Linker created -
+  .text              ro code   0x800'2254    0x20  system_stm32l4xx.o [1]
+  .text              ro code   0x800'2274    0x1e  cmain.o [4]
+  .text              ro code   0x800'2292     0x4  low_level_init.o [2]
+  .text              ro code   0x800'2296     0x4  exit.o [2]
+  .text              ro code   0x800'229c     0xa  cexit.o [4]
+  .text              ro code   0x800'22a8    0x14  exit.o [5]
+  .text              ro code   0x800'22bc    0x10  startup_stm32l433xx.o [1]
+  Initializer bytes  const     0x800'22cc    0x10  <for P2-1>
+  .text              ro code   0x800'22dc     0xc  cstartup_M.o [4]
+  .rodata            const     0x800'22e8     0x8  system_stm32l4xx.o [1]
+  .text              ro code   0x800'22f0     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'22f4     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'22f8     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'22fc     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2300     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2304     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2308     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'230c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2310     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2314     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2318     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'231c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2320     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2324     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2328     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'232c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2330     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2334     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2338     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'233c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2340     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2344     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2348     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'234c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2350     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2354     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2358     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'235c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2360     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2364     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2368     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'236c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2370     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2374     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2378     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'237c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2380     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2384     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2388     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'238c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2390     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2394     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'2398     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'239c     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23a0     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23a4     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23a8     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23ac     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23b0     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23b4     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23b8     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23bc     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23c0     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23c4     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23c8     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23cc     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23d0     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23d4     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23d8     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23dc     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23e0     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23e4     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23e8     0x4  startup_stm32l433xx.o [1]
+  .text              ro code   0x800'23ec     0x4  startup_stm32l433xx.o [1]
+  .rodata            const     0x800'23f0     0x0  zero_init3.o [4]
+  .rodata            const     0x800'23f0     0x0  copy_init3.o [4]
+                             - 0x800'23f0  0x2264
+
+"P2", part 1 of 3:                           0x10
+  P2-1                        0x2000'0000    0x10  <Init block>
+    .data            inited   0x2000'0000     0xc  stm32l4xx_hal.o [1]
+    .data            inited   0x2000'000c     0x4  system_stm32l4xx.o [1]
+                            - 0x2000'0010    0x10
+
+"P2", part 2 of 3:                          0x11c
+  .bss               zero     0x2000'0010   0x11c  main.o [1]
+                            - 0x2000'012c   0x11c
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x2000'0130   0x400  <Block>
+    CSTACK           uninit   0x2000'0130   0x400  <Block tail>
+                            - 0x2000'0530   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'23f0   0x803'ffff  0x3'dc10
+  0x2000'012c  0x2000'012f       0x4
+  0x2000'0530  0x2000'ffff    0xfad0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x11c:
+          0x2000'0010  0x11c
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+           0x800'22cc   0x10
+    1 destination range, total size 0x10:
+          0x2000'0000   0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\sonartech\Desktop\STM32 nucleo\Timer - PWM\EWARM\Timer_PWM\Obj: [1]
+    main.o                      642               284
+    startup_stm32l433xx.o       668
+    stm32l4xx_hal.o             140       12       12
+    stm32l4xx_hal_cortex.o      200
+    stm32l4xx_hal_gpio.o        490
+    stm32l4xx_hal_msp.o         332
+    stm32l4xx_hal_pwr_ex.o      136
+    stm32l4xx_hal_rcc.o       1 932
+    stm32l4xx_hal_rcc_ex.o      948
+    stm32l4xx_hal_tim.o       1 740
+    stm32l4xx_hal_tim_ex.o      106
+    stm32l4xx_hal_uart.o      1 096
+    stm32l4xx_it.o               40
+    system_stm32l4xx.o           32       60        4
+    -------------------------------------------------
+    Total:                    8 502       72      300
+
+dl7M_tln.a: [2]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+m7M_tls.a: [3]
+    fpinit_M.o                   34
+    -------------------------------------------------
+    Total:                       34
+
+rt7M_tl.a: [4]
+    ABImemclr4.o                  6
+    ABImemset48.o                50
+    I64DivMod_small.o           262
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      30
+    copy_init3.o                 44
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 58
+    -------------------------------------------------
+    Total:                      514
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         10        4
+    Linker created                        36    1 024
+-----------------------------------------------------
+    Grand Total:              9 088      112    1 324
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'2230          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'2254          --   Gb  - Linker created -
+?main                    0x800'2275         Code  Gb  cmain.o [4]
+AHBPrescTable            0x800'2264   0x10  Data  Gb  system_stm32l4xx.o [1]
+APBPrescTable            0x800'22e8    0x8  Data  Gb  system_stm32l4xx.o [1]
+BusFault_Handler         0x800'21b3    0x2  Code  Gb  stm32l4xx_it.o [1]
+CSTACK$$Base            0x2000'0130          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0530          --   Gb  - Linker created -
+DebugMon_Handler         0x800'21b9    0x2  Code  Gb  stm32l4xx_it.o [1]
+EXTI15_10_IRQHandler     0x800'21c1    0x8  Code  Gb  stm32l4xx_it.o [1]
+Error_Handler            0x800'154b    0x4  Code  Gb  main.o [1]
+HAL_GPIO_EXTI_IRQHandler
+                         0x800'170f   0x10  Code  Gb  stm32l4xx_hal_gpio.o [1]
+HAL_GPIO_Init            0x800'1559  0x19c  Code  Gb  stm32l4xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin       0x800'16ff   0x10  Code  Gb  stm32l4xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'16f5    0xa  Code  Gb  stm32l4xx_hal_gpio.o [1]
+HAL_GetTick              0x800'095d    0xc  Code  Wk  stm32l4xx_hal.o [1]
+HAL_IncTick              0x800'21d5   0x10  Code  Wk  stm32l4xx_hal.o [1]
+HAL_Init                 0x800'1b39   0x28  Code  Gb  stm32l4xx_hal.o [1]
+HAL_InitTick             0x800'0919   0x44  Code  Wk  stm32l4xx_hal.o [1]
+HAL_MspInit              0x800'117d   0x2c  Code  Gb  stm32l4xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ       0x800'0a61   0x16  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'0a25   0x3a  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'0a0b   0x1a  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_PWREx_ControlVoltageScaling
+                         0x800'0975   0x5e  Code  Gb  stm32l4xx_hal_pwr_ex.o [1]
+HAL_PWREx_GetVoltageRange
+                         0x800'0969    0xc  Code  Gb  stm32l4xx_hal_pwr_ex.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                         0x800'1785  0x27e  Code  Gb  stm32l4xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig      0x800'067b   0xfa  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'083d   0x10  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'084d    0xe  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'07ab   0x92  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'018d  0x4b6  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_SYSTICK_Config       0x800'0a77   0x28  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_TIMEx_Break2Callback
+                         0x800'1551    0x2  Code  Wk  stm32l4xx_hal_tim_ex.o [1]
+HAL_TIMEx_BreakCallback
+                         0x800'154f    0x2  Code  Wk  stm32l4xx_hal_tim_ex.o [1]
+HAL_TIMEx_CommutCallback
+                         0x800'1555    0x2  Code  Wk  stm32l4xx_hal_tim_ex.o [1]
+HAL_TIMEx_MasterConfigSynchronization
+                         0x800'1fad   0x5c  Code  Gb  stm32l4xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init        0x800'0ab9   0x1a  Code  Gb  stm32l4xx_hal_tim.o [1]
+HAL_TIM_Base_MspInit     0x800'11cb   0x34  Code  Gb  stm32l4xx_hal_msp.o [1]
+HAL_TIM_Base_Start_IT    0x800'0ad3   0x5a  Code  Gb  stm32l4xx_hal_tim.o [1]
+HAL_TIM_IRQHandler       0x800'0c69  0x15c  Code  Gb  stm32l4xx_hal_tim.o [1]
+HAL_TIM_MspPostInit      0x800'11ff   0x34  Code  Gb  stm32l4xx_hal_msp.o [1]
+HAL_TIM_PWM_ConfigChannel
+                         0x800'0dd5  0x104  Code  Gb  stm32l4xx_hal_tim.o [1]
+HAL_TIM_PWM_Init         0x800'0b57   0x1a  Code  Gb  stm32l4xx_hal_tim.o [1]
+HAL_TIM_PWM_MspInit      0x800'11a9   0x22  Code  Gb  stm32l4xx_hal_msp.o [1]
+HAL_TIM_PWM_Start        0x800'0b71   0xa6  Code  Gb  stm32l4xx_hal_tim.o [1]
+HAL_TIM_PeriodElapsedCallback
+                         0x800'12cd   0x14  Code  Gb  main.o [1]
+HAL_UART_Init            0x800'1b65   0x30  Code  Gb  stm32l4xx_hal_uart.o [1]
+HAL_UART_MspInit         0x800'1233   0x64  Code  Gb  stm32l4xx_hal_msp.o [1]
+HardFault_Handler        0x800'21af    0x2  Code  Gb  stm32l4xx_it.o [1]
+MSIRangeTable            0x800'2150   0x30  Data  Gb  system_stm32l4xx.o [1]
+MX_GPIO_Init             0x800'1457   0xd2  Code  Lc  main.o [1]
+MemManage_Handler        0x800'21b1    0x2  Code  Gb  stm32l4xx_it.o [1]
+NMI_Handler              0x800'21ad    0x2  Code  Gb  stm32l4xx_it.o [1]
+PendSV_Handler           0x800'21bb    0x2  Code  Gb  stm32l4xx_it.o [1]
+RCCEx_PLLSAI1_Config     0x800'1a13   0xfc  Code  Lc  stm32l4xx_hal_rcc_ex.o [1]
+RCC_SetFlashLatencyFromMSIRange
+                         0x800'0865   0x74  Code  Lc  stm32l4xx_hal_rcc.o [1]
+Region$$Table$$Base      0x800'2230          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'2254          --   Gb  - Linker created -
+SVC_Handler              0x800'21b7    0x2  Code  Gb  stm32l4xx_it.o [1]
+SysTick_Handler          0x800'21bd    0x4  Code  Gb  stm32l4xx_it.o [1]
+SystemClock_Config       0x800'13dd   0x7a  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'000c    0x4  Data  Gb  system_stm32l4xx.o [1]
+SystemInit               0x800'2255    0xc  Code  Gb  system_stm32l4xx.o [1]
+TIM6_DAC_IRQHandler      0x800'21c9    0x6  Code  Gb  stm32l4xx_it.o [1]
+TIM_Base_SetConfig       0x800'0eef   0x5a  Code  Gb  stm32l4xx_hal_tim.o [1]
+TIM_CCxChannelCmd        0x800'1161   0x16  Code  Gb  stm32l4xx_hal_tim.o [1]
+TIM_OC1_SetConfig        0x800'0f49   0x62  Code  Lc  stm32l4xx_hal_tim.o [1]
+TIM_OC2_SetConfig        0x800'0fab   0x60  Code  Gb  stm32l4xx_hal_tim.o [1]
+TIM_OC3_SetConfig        0x800'100b   0x5e  Code  Lc  stm32l4xx_hal_tim.o [1]
+TIM_OC4_SetConfig        0x800'1069   0x42  Code  Lc  stm32l4xx_hal_tim.o [1]
+TIM_OC5_SetConfig        0x800'10ab   0x48  Code  Lc  stm32l4xx_hal_tim.o [1]
+TIM_OC6_SetConfig        0x800'10f3   0x42  Code  Lc  stm32l4xx_hal_tim.o [1]
+UART_AdvFeatureConfig    0x800'1de9   0xc6  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_CheckIdleState      0x800'1eaf   0x5c  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_SetConfig           0x800'1bf9  0x1ce  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                         0x800'1f0b   0x7c  Code  Gb  stm32l4xx_hal_uart.o [1]
+UsageFault_Handler       0x800'21b5    0x2  Code  Gb  stm32l4xx_it.o [1]
+__NVIC_SetPriority       0x800'09f1   0x1a  Code  Lc  stm32l4xx_hal_cortex.o [1]
+__aeabi_ldiv0            0x800'214d         Code  Gb  I64DivZer.o [4]
+__aeabi_memclr4          0x800'177d         Code  Gb  ABImemclr4.o [4]
+__cmain                  0x800'2275         Code  Gb  cmain.o [4]
+__exit                   0x800'22a9   0x14  Code  Gb  exit.o [5]
+__iar_Memset4_word       0x800'2011         Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word       0x800'2011         Code  Gb  ABImemset48.o [4]
+__iar_copy_init3         0x800'2181   0x2c  Code  Gb  copy_init3.o [4]
+__iar_data_init3         0x800'21e5   0x28  Code  Gb  data_init.o [4]
+__iar_init_vfp           0x800'220d         Code  Gb  fpinit_M.o [3]
+__iar_program_start      0x800'22dd         Code  Gb  cstartup_M.o [4]
+__iar_small_uldivmod     0x800'2045         Code  Gb  I64DivMod_small.o [4]
+__iar_zero_init3         0x800'1743   0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x800'2293    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32l433xx.o [1]
+_call_main               0x800'2281         Code  Gb  cmain.o [4]
+_exit                    0x800'229d         Code  Gb  cexit.o [4]
+_main                    0x800'228f         Code  Gb  cmain.o [4]
+exit                     0x800'2297    0x4  Code  Gb  exit.o [2]
+htim2                   0x2000'0094   0x4c  Data  Gb  main.o [1]
+htim6                   0x2000'00e0   0x4c  Data  Gb  main.o [1]
+huart2                  0x2000'0010   0x84  Data  Gb  main.o [1]
+main                     0x800'12e1   0xfc  Code  Gb  main.o [1]
+uwTick                  0x2000'0004    0x4  Data  Gb  stm32l4xx_hal.o [1]
+uwTickFreq              0x2000'0000    0x1  Data  Gb  stm32l4xx_hal.o [1]
+uwTickPrio              0x2000'0008    0x4  Data  Gb  stm32l4xx_hal.o [1]
+
+
+[1] = C:\Users\sonartech\Desktop\STM32 nucleo\Timer - PWM\EWARM\Timer_PWM\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  9 088 bytes of readonly  code memory
+    112 bytes of readonly  data memory
+  1 324 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
